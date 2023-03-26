@@ -8,7 +8,8 @@
     <title>Survey Form</title>
 </head>
 <body>
-  <div>
+  <div id="cover"></div>
+  <div id="">
     <div class="desc">
       <h1 id="title">freeCodeCamp Survey Form</h1>
       <p id="description" class="description text-center">
@@ -16,7 +17,7 @@
       </p>
 
     </div>
-   
+  <div id="top"> 
   <div class="box1">
     <form id="survey-form">
       <div id="details">
@@ -26,16 +27,16 @@
       <div id="details">
 
         <label id="email-label">Email</label><br>
-        <input type ="text" name="email" id="email" class="inputs" placeholder="Enter your Email" required />
+        <input type ="email" name="email" id="email" class="inputs" placeholder="Enter your Email" required />
 
       </div>
       <div id="details">
         <label id="email-label">Age (optional)</label><br>
-       <input type ="number" name="age" id="number" class="inputs" placeholder="Age" />
+       <input type ="number" name="age" id="number" class="inputs" min="10" max ="99" placeholder="Age" />
       </div>
-      <div id="details">
-        <p> Which option best describes your current role?</p>
-        <select id="dropdown" name="role" class="inputs">
+      <div id="">
+        <p id="pdetails"> Which option best describes your current role?</p>
+        <select id="dropdown" class="inputs" name="role">
             <option class="inputs" disabled value>Select Current role</option>
             <option class="inputs" value="student">Student</option>
             <option class="inputs" value="job">Full Time Job</option>
@@ -44,13 +45,15 @@
       </div>
       <div id="details">
         <p>Would you recommend freeCodeCamp to a friend?</p>
-        <label><input name="definitely" value="definitely" type="radio" checked/>Definitely</label><br>
-        <label><input name="maybe" value="maybe" type="radio"/>Maybe</label><br>
-        <label><input name="n-sure" value="n-sure" type="radio"/>Not Sure</label><br>
+        <label><input name="recommend" value="definitely" type="radio" checked/>Definitely</label><br>
+        <label><input name="recommend" value="maybe" type="radio"/>Maybe</label><br>
+        <label><input name="recommend" value="n-sure" type="radio"/>Not Sure</label><br>
       </div> 
-      <div id="details">
-        <p>What is your favorite feature of freeCodeCamp?</p>
-        <select id="fr-feature" name="role"  class="inputs">
+      <div id="">
+        <div id="pdetails">
+         <p>What is your favorite feature of freeCodeCamp?</p>
+        </div>
+        <select id="dropdown" name="role"  class="inputs">
             <option disabled value>Select an option</option>
             <option value="challenges">Challenges</option>
             <option value="projects">Projects</option>
@@ -66,8 +69,10 @@
             <label><input name="improved" value ="challenges" type="checkbox"/>Challenges</label><br>
             <label><input name="improved" value ="open-source" type="checkbox"/>Open Source Community</label><br>
         </div>
-        <div id="details">
+        <div id="">
+          <div id="details">
           <p>Any comments or suggestions?</p>
+          </div>
             <textarea id="comment" name="comment" placeholder="enter your comment here..."></textarea>
         </div>
         <div id="details">
@@ -75,7 +80,7 @@
         </div>
     </form>
   </div>
-
+ </div>
 
 
   </div>
