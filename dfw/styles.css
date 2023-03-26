@@ -1,37 +1,53 @@
-body{
-    
-    background-image: url("imagex.jpg");
-    max-width: 100%;
-    max-height: 100%;
-    display: flex; 
-    justify-content: center;
-    font-family: Poppins, sans-serif;
-    
 
+html{
+    background: url(imagex.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Poppins, sans-serif;  
+}
+#cover{
+    position:fixed;
+    padding:0;
+    margin:0;
 
-    
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background: #7a7af1;
+    opacity:0.6; 
+    z-index: -1; 
 }
 .desc{
 text-align: center;
-
-
 }
 #description{
     font-style: italic;
+    font-size:24px;
+    color:white;
+}
+#top{
+    display: flex;
+    justify-content: center;
+}
+#title{
+    font-size: 35px;
+    line-height: 20px;
+    color:white;
 }
 
 .box1 {
  background-color: #1b1b32;
  opacity: 0.8;
- width: 100%;
+ width: 60%;
  height: auto;
- margin: 5px;
  padding: 10px;
  color: azure;
  border-radius: 10px;
  line-height: 24px;
- 
-
 }
 #email-label {
     font-size: 16px;
@@ -39,38 +55,44 @@ text-align: center;
     width: 100%;
     clear: both;
     line-break: strict;
-
-
 }
 #details{
     font-size: 15px;
     line-height: 25px;
     margin: 20px;
     font-weight:600;
-
-
+}
+#pdetails{
+    font-size: 15px;
+    line-height: 5px;
+    margin: 20px;
+    font-weight:600;
 }
 .inputs{
     margin: 10px 5px 10px 0px;
     line-height: 40px;
     width: 100%;
+    border: 1px white;
     border-radius: 7px;
     padding: 5px;
-
 }
-select{
-    margin: 10px 5px 10px 0px;
-    line-height: 40px;
-    width: 100%;
+#dropdown{
+    width: 95%;
     padding: 15px;
     border:2px solid white;
-    border-radius: 20px;
-
+    border-radius: 7px;
+    margin: 20px;
+    margin-top:5px;
 }
 #comment{
-    width: 100%;
-    height: 120px;
-    padding: 10px;
+    width: 95%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    margin-left: 20px;
 }
 #submit{
     width: 100%;
@@ -82,6 +104,4 @@ select{
     color: white;
     font-size: 16px;
     font-weight: 700;
-
-
 }
